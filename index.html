@@ -11,23 +11,47 @@
 <body>
 
     <div class="container">
-        <div class="row">
-    <div><h1>Crystals Collector!</h1></div>
-    <div id="rules">
+    
+    <div>
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <div class="box" id="rules">
+    <h2>Rules</h2>
     <p>You will be given a random number at the start of the game</p>
     <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
     <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</p>
     <p>The value of each crystal is hidden from you until you click on it.</p>
     <p>Each time when the game starts, the game will change the values of each crystal</p>
-    
-    
     </div>
-    <div id="wins">Wins: </div>
-    <div id="losses">Losses: </div>
-    <div id="guesses" type="reset">Guesses Left: </div>
-    <div id="userTracker">Guesses so far: </div>
+
+    <div class="row">
+    <div class="box">
+    <div id="computerChoice">Computer's Crystals: </div>
+    </div>
+    <div class="box">
+        <div id="wins">Wins: </div>
+        <div id="losses">Losses: </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+        <img src="assets/images/bluecrystal.jpg" class="crystals" id="crystal1" alt="Blue Crystal">
+        <img src="assets/images/redcrystal.jpg" class="crystals" id="crystal2" alt="Red Crystal">
+        <img src="assets/images/whitecrystal.jpg" class="crystals" id="crystal3" alt="White Crystal">
+        <img src="assets/images/yellowcrystal.jpg" class="crystals" id="crystal4" alt="Yellow Crystal">
+        </div>
+    
+    <div class="row">
+        <div id="crystalsRetrieved">Crystals retrieved: </div>
+    </div>
+
+
+
+    </div>
 
             </div>
-   </div> 
+
 </body>
 </html>
