@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Game</title>
-    <link rel="stylesheet" type= "text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type= "text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
+    
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
@@ -29,24 +29,30 @@
 
     <div class="row">
     <div class="box">
-    <div id="computerChoice">Computer's Crystals: </div>
+    <ul>Computer's Crystals: </ul>
+    <ul id="computerChoice"></ul>
     </div>
     <div class="box">
-        <div id="wins">Wins: </div>
-        <div id="losses">Losses: </div>
+        <ul>Wins: </ul>
+        <ul id="wins"></ul>
+        <ul>Losses: </ul>
+        <ul id="losses"><ul>
     </div>
     </div>
 
     <div class="row">
         <div class="box">
-        <img src="assets/images/bluecrystal.jpg" class="crystals" id="crystal1" alt="Blue Crystal">
-        <img src="assets/images/redcrystal.jpg" class="crystals" id="crystal2" alt="Red Crystal">
-        <img src="assets/images/whitecrystal.jpg" class="crystals" id="crystal3" alt="White Crystal">
-        <img src="assets/images/yellowcrystal.jpg" class="crystals" id="crystal4" alt="Yellow Crystal">
+        <img src="assets/images/bluecrystal.jpg" class="crystals" id="crystalBlue" alt="Blue Crystal">
+        <img src="assets/images/redcrystal.jpg" class="crystals" id="crystalRed" alt="Red Crystal">
+        <img src="assets/images/whitecrystal.jpg" class="crystals" id="crystalWhite" alt="White Crystal">
+        <img src="assets/images/yellowcrystal.jpg" class="crystals" id="crystalYellow" alt="Yellow Crystal">
         </div>
     
     <div class="row">
-        <div id="crystalsRetrieved">Crystals retrieved: </div>
+        <div class="box">
+        <ul>Crystals retrieved: </ul>
+        <ul id="crystalsRetrieved"></ul>
+    </div>
     </div>
 
 
@@ -54,6 +60,6 @@
     </div>
 
             </div>
-    <script type="text/javascript" src="/unit-4-game/assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
