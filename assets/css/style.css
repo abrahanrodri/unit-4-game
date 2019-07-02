@@ -1,0 +1,12 @@
+body{
+    background-color: red;
+}
+
+.row {
+    display: flex;
+  }
+  
+.box {
+    flex: 30%;
+  }
+

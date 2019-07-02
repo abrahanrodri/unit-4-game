@@ -52,7 +52,7 @@ $("#crystalYellow").on("click", function(){
 
 });
 
-
+//I'm trying to reset but I can't quite get the game to reset
 function reset(){
   var crystalsRetrieved = 0;
   var crystalBlue = computerParameters(1,12);
@@ -64,8 +64,11 @@ function reset(){
 
 console.log("Crystal Yellow value: " + crystalYellow);
 
-console.log("Crystals Retrieved: " + crystalsRetrieved);
+//console log wont update as Im using it in the game. Maybe it won't allow it?
+//console.log("Crystals Retrieved: " + crystalsRetrieved);
 
+
+//acknowledges a win but since I can't get it to reset, it won't reset the game
 function results(){
   if (crystalsRetrieved === computerChoice){
     wins += 1;
