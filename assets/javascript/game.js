@@ -54,12 +54,14 @@ $("#crystalYellow").on("click", function(){
 
 //I'm trying to reset but I can't quite get the game to reset
 function reset(){
-  var crystalsRetrieved = 0;
-  var crystalBlue = computerParameters(1,12);
-  var crystalRed = computerParameters(1,12);
-  var crystalWhite = computerParameters(1,2);
-  var crystalYellow = computerParameters(1,12);
-  var computerChoice = computerParameters(19,120)
+  crystalsRetrieved = 0;
+  crystalBlue = computerParameters(1,12);
+  crystalRed = computerParameters(1,12);
+  crystalWhite = computerParameters(1,2);
+  crystalYellow = computerParameters(1,12);
+  
+  computerChoice = computerParameters(19,120); 
+  $("#computerChoice").html(computerChoice);
 }
 
 console.log("Crystal Yellow value: " + crystalYellow);
@@ -73,13 +75,13 @@ function results(){
   if (crystalsRetrieved === computerChoice){
     wins += 1;
     alert("wins!  :)");
-    $("wins").text(wins);
+    $("#wins").text(wins);
     reset();
   }
   else if (crystalsRetrieved > computerChoice){
     losses +=1;
     alert("losses! :(");
-    $("losses").text(losses);
+    $("#losses").text(losses);
     reset();
   }
 }
